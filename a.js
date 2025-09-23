@@ -27,9 +27,9 @@ observer.observe(successfulDiv, {
 
 // Example: simulate a change after some time (for demonstration)
 // Remove or modify this in your actual implementation
-//setTimeout(() => {
- // successfulDiv.textContent = "Operation Successful!";
-//}, 2000);
+setTimeout(() => {
+ successfulDiv.textContent = "Operation Successful!";
+}, 2000);
 
 // Stop button to hide the loader
 stopButton.addEventListener("click", () => {
@@ -69,4 +69,7 @@ async function sendMessage() {
 }
 
 // Call the function
-//sendMessage();
+document.addEventListener("DOMContentLoaded", () => {
+  sendMessage();
+  document.getElementById('textInput').value=localStorage.getItem('success');
+});

@@ -70,6 +70,5 @@ async function sendMessage() {
 
 // Call the function
 document.addEventListener("DOMContentLoaded", () => {
-  sendMessage();
   document.getElementById('textInput').value=localStorage.getItem('success');
 });

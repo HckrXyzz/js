@@ -5,13 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
     filterBtn.innerText = 'Generate Filtered Table';
     
     // Optional: Add some basic styling to the button
-    filterBtn.style.padding = '10px 15px';
-    filterBtn.style.backgroundColor = '#007bff';
-    filterBtn.style.color = 'white';
-    filterBtn.style.border = 'none';
-    filterBtn.style.borderRadius = '4px';
-    filterBtn.style.cursor = 'pointer';
-    filterBtn.style.margin = '20px 0';
+    filterBtn.classList="fixed right-0 px-5 py-3 bg-gray-950 text-pink-700 border-4 border-pink-700 shadow-xl shadow-black transition-all duration-300 hover:scale-110";
 
     // 2. Append the button to the body of the document
     document.body.appendChild(filterBtn);
@@ -58,10 +52,5 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // Append the complete new table to the body
         document.body.appendChild(newTable);
-
-        // Optional: Disable the button after generation to prevent duplicates
-        this.disabled = true;
-        this.style.backgroundColor = '#ccc';
-        this.style.cursor = 'not-allowed';
     });
 });

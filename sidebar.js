@@ -11,12 +11,17 @@ sidebarPanel.innerHTML = `
         <button id="closeSidebarBtn" class="close-sidebar-btn">✕</button>
     </div>
     <nav class="sidebar-nav">
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
+        <ul class="w-64 bg-blue-500 p-2"><li class="w-full mb-2 bg-emerald-500 shadow-xl shadow-black p-2 flex justify-between items-center hover:border-b-2">
+      <a class="text-lg font-bold" title="MCW" data-src="https://api.247cs.live/google-sheets/m1" href="/m1">MCW</a></li><li class="w-full mb-2 bg-emerald-500 shadow-xl shadow-black p-2 flex justify-between items-center hover:border-b-2">
+      <a class="text-lg font-bold" title="Mega Cricket World" data-src="https://api.247cs.live/google-sheets/m2" href="/m2">Mega Cricket World</a></li><li class="w-full mb-2 bg-emerald-500 shadow-xl shadow-black p-2 flex justify-between items-center hover:border-b-2">
+      <a class="text-lg font-bold" title="Banglabet" data-src="https://api.247cs.live/google-sheets/b1" href="/b1">Banglabet</a></li><li class="w-full mb-2 bg-emerald-500 shadow-xl shadow-black p-2 flex justify-between items-center hover:border-b-2">
+      <a class="text-lg font-bold" title="Bengalbet" data-src="https://api.247cs.live/google-sheets/b2" href="/b2">Bengalbet</a></li><li class="w-full mb-2 bg-emerald-500 shadow-xl shadow-black p-2 flex justify-between items-center hover:border-b-2">
+      <a class="text-lg font-bold" title="Deshislots" data-src="https://api.247cs.live/google-sheets/b3" href="/b3">Deshislots</a></li><li class="w-full mb-2 bg-emerald-500 shadow-xl shadow-black p-2 flex justify-between items-center hover:border-b-2">
+      <a class="text-lg font-bold" title="Banglawin" data-src="https://api.247cs.live/google-sheets/b4" href="/b4">Banglawin</a></li><li class="w-full mb-2 bg-emerald-500 shadow-xl shadow-black p-2 flex justify-between items-center hover:border-b-2">
+      <a class="text-lg font-bold" title="Khelaghor" data-src="https://api.247cs.live/google-sheets/k1" href="/k1">Khelaghor</a></li><li class="w-full mb-2 bg-emerald-500 shadow-xl shadow-black p-2 flex justify-between items-center hover:border-b-2">
+      <a class="text-lg font-bold" title="Banglaplus" data-src="https://api.247cs.live/google-sheets/b5" href="/b5">Banglaplus</a></li><li class="w-full mb-2 bg-emerald-500 shadow-xl shadow-black p-2 flex justify-between items-center hover:border-b-2">
+      <a class="text-lg font-bold" title="joywin" data-src="https://api.247cs.live/google-sheets/jw" href="/jw">joywin</a></li><li class="w-full mb-2 bg-emerald-500 shadow-xl shadow-black p-2 flex justify-between items-center hover:border-b-2">
+      <a class="text-lg font-bold" title="Takabaazi" data-src="https://api.247cs.live/google-sheets/tk" href="/tk">Takabaazi</a></li></ul>
     </nav>
 `;
 

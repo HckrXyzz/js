@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
     filterBtn.innerText = 'Generate Filtered Table';
     
     // Optional: Add some basic styling to the button
-    filterBtn.classList="fixed right-0 px-5 py-3 bg-gray-950 text-pink-700 border-4 border-pink-700 shadow-xl shadow-black transition-all duration-300 hover:scale-110";
+    filterBtn.classList="fixed top-64 left-0 z-50 px-5 py-3 bg-gray-950 text-pink-700 border-4 border-pink-700 shadow-xl shadow-black transition-all duration-300 hover:scale-110";
 
     // 2. Append the button to the body of the document
     document.body.appendChild(filterBtn);
@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // 3. Add the click event listener to the button
     filterBtn.addEventListener('click', function() {
         // Find the source table by its ID "dataTable"
-        const sourceTable = document.getElementById('dataTable');
+        const sourceTable = document.querySelector('table');
         if (!sourceTable) {
             console.error('Table with ID "dataTable" not found.');
             return;

@@ -2,7 +2,7 @@ function createScrollButtons() {
   const goTopBtn = document.createElement("button");
   goTopBtn.id = "goTopBtn";
   goTopBtn.className =
-    "bg-black text-red-500 border-b-2 border-red-500 p-3 rounded-full shadow-lg hover:bg-gray-900 transition duration-300 transform hover:scale-110 focus:outline-none hidden";
+    "bg-slate-950 text-red-500 border-b-2 border-red-500 p-2 rounded-full shadow-lg shadow-black hover:bg-gray-900 transition duration-300 transform hover:scale-110 focus:outline-none hidden";
   goTopBtn.innerHTML = `<svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18"></path>
 </svg>`;
@@ -12,7 +12,7 @@ function createScrollButtons() {
   const goBottomBtn = document.createElement("button");
   goBottomBtn.id = "goBottomBtn";
   goBottomBtn.className =
-    "border-t-2 border-red-600 bg-black text-red-500 p-3 rounded-full shadow-lg hover:bg-gray-900/50 transition duration-300 transform hover:scale-110 focus:outline-none";
+    "border-t-2 border-red-600 bg-slate-950 text-red-500 p-2 rounded-full shadow-lg shadow-black hover:bg-gray-900/50 transition duration-300 transform hover:scale-110 focus:outline-none";
   goBottomBtn.innerHTML = `<svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
 </svg>`;
@@ -41,4 +41,5 @@ function createScrollButtons() {
   };
   window.addEventListener("scroll", toggleButtons);
   window.addEventListener("load", toggleButtons);
-}createScrollButtons();
+}
+createScrollButtons();

@@ -26,7 +26,7 @@ sidebarPanel.innerHTML = `
       <li class="w-full mb-2 bg-gray-950 shadow-xl shadow-black p-2 flex justify-between items-center hover:border-b-2">
       <a class="text-lg font-bold" title="Banglawin" data-src="https://api.247cs.live/google-sheets/${sheetId}/b4!A:Z/rows?connectionId=68414da0275727bf1c9c74fd" href="#b4">Banglawin</a></li>
       <li class="w-full mb-2 bg-gray-950 shadow-xl shadow-black p-2 flex justify-between items-center hover:border-b-2">
-      <a class="text-lg font-bold" title="Khelaghor" data-src="https://api.247cs.live/google-sheets/${sheetId}/k1!A:Z/rows?connectionId=68414da0275727bf1c9c74fd" href="#k1">Khelaghor</a></li>
+      <a class="text-lg font-bold" title="Khelaghor" data-src="https://api.247cs.live/google-sheets/${sheetId}/k1!A:Z/rows?connectionId=68414da0275727bf1c9c74fd" href="#k1"><img src="https://img.k516g.com/kg/h5/assets/images/logo.png?v=1785911854582">Khelaghor</a></li>
       <li class="w-full mb-2 bg-gray-950 shadow-xl shadow-black p-2 flex justify-between items-center hover:border-b-2">
       <a class="text-lg font-bold" title="Banglaplus" data-src="https://api.247cs.live/google-sheets/${sheetId}/b5!A:Z/rows?connectionId=68414da0275727bf1c9c74fd" href="#b5">Banglaplus</a></li>
       <li class="w-full mb-2 bg-gray-950 shadow-xl shadow-black p-2 flex justify-between items-center hover:border-b-2">

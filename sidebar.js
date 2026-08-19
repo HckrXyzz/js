@@ -7,31 +7,36 @@ const sheetId="1gVFHr8Ywzecz7gxP4HuPwMsvhEBk5ihl_iZsYyjBgco";
 const sidebarPanel = document.createElement('div');
 sidebarPanel.id = 'sidebarPanel';
 sidebarPanel.className = 'sidebar-panel';
-sidebarPanel.innerHTML = `
+const siteElement = document.createElement("div");
+siteElement.innerHTML = `
     <div class="sidebar-header">
         <button id="closeSidebarBtn" class="close-sidebar-btn">✕</button>
     </div>
     <nav class="sidebar-nav">
         <ul class="w-64 bg-slate-800 p-2">
         <li class="w-full mb-2 bg-gray-950 shadow-xl shadow-black p-2 flex justify-between items-center hover:border-b-2">
+        <button type="button" class="logo w-10 h-10 rounded-full">logo</button>
       <a class="text-lg font-bold" title="MCW" data-src="https://api.247cs.live/google-sheets/${sheetId}/m1!A:Z/rows?connectionId=68414da0275727bf1c9c74fd" href="#m1">MCW</a></li>
       <li class="w-full mb-2 bg-gray-950 shadow-xl shadow-black p-2 flex justify-between items-center hover:border-b-2">
+      <button type="button" class="logo w-10 h-10 rounded-full">logo</button>
       <a class="text-lg font-bold" title="Mega Cricket World" data-src="https://api.247cs.live/google-sheets/${sheetId}/m2!A:Z/rows?connectionId=68414da0275727bf1c9c74fd" href="#m2">Mega Cricket World</a></li>
-      <li class="w-full mb-2 bg-gray-950 shadow-xl shadow-black p-2 flex justify-between items-center hover:border-b-2">
+      <li class="w-full mb-2 bg-gray-950 shadow-xl shadow-black p-2 flex justify-between items-center hover:border-b-2"><button type="button" class="logo w-10 h-10 rounded-full">logo</button>
       <a class="text-lg font-bold" title="Banglabet" data-src="https://api.247cs.live/google-sheets/${sheetId}/b1!A:Z/rows?connectionId=68414da0275727bf1c9c74fd" href="#b1">Banglabet</a></li>
-      <li class="w-full mb-2 bg-gray-950 shadow-xl shadow-black p-2 flex justify-between items-center hover:border-b-2">
+      <li class="w-full mb-2 bg-gray-950 shadow-xl shadow-black p-2 flex justify-between items-center hover:border-b-2"><button type="button" class="logo w-10 h-10 rounded-full">logo</button>
       <a class="text-lg font-bold" title="Bengalbet" data-src="https://api.247cs.live/google-sheets/${sheetId}/b2!A:Z/rows?connectionId=68414da0275727bf1c9c74fd" href="#b2">Bengalbet</a></li>
-      <li class="w-full mb-2 bg-gray-950 shadow-xl shadow-black p-2 flex justify-between items-center hover:border-b-2">
+      <li class="w-full mb-2 bg-gray-950 shadow-xl shadow-black p-2 flex justify-between items-center hover:border-b-2"><button type="button" class="logo w-10 h-10 rounded-full">logo</button>
       <a class="text-lg font-bold" title="Deshislots" data-src="https://api.247cs.live/google-sheets/${sheetId}/b3!A:Z/rows?connectionId=68414da0275727bf1c9c74fd" href="#b3">Deshislots</a></li>
-      <li class="w-full mb-2 bg-gray-950 shadow-xl shadow-black p-2 flex justify-between items-center hover:border-b-2">
+      <li class="w-full mb-2 bg-gray-950 shadow-xl shadow-black p-2 flex justify-between items-center hover:border-b-2"><button type="button" class="logo w-10 h-10 rounded-full">logo</button>
       <a class="text-lg font-bold" title="Banglawin" data-src="https://api.247cs.live/google-sheets/${sheetId}/b4!A:Z/rows?connectionId=68414da0275727bf1c9c74fd" href="#b4">Banglawin</a></li>
       <li class="w-full mb-2 bg-gray-950 shadow-xl shadow-black p-2 flex justify-between items-center hover:border-b-2">
-      <a class="text-lg font-bold" title="Khelaghor" data-src="https://api.247cs.live/google-sheets/${sheetId}/k1!A:Z/rows?connectionId=68414da0275727bf1c9c74fd" href="#k1"><img src="https://img.k516g.com/kg/h5/assets/images/logo.png?v=1785911854582">Khelaghor</a></li>
+      <button type="button" class="logo w-10 h-10 rounded-full">logo</button>
+      <a class="text-lg font-bold" title="Khelaghor" data-src="https://api.247cs.live/google-sheets/${sheetId}/k1!A:Z/rows?connectionId=68414da0275727bf1c9c74fd" href="#k1">Khelaghor</a></li>
       <li class="w-full mb-2 bg-gray-950 shadow-xl shadow-black p-2 flex justify-between items-center hover:border-b-2">
+      <button type="button" class="logo w-10 h-10 rounded-full">logo</button>
       <a class="text-lg font-bold" title="Banglaplus" data-src="https://api.247cs.live/google-sheets/${sheetId}/b5!A:Z/rows?connectionId=68414da0275727bf1c9c74fd" href="#b5">Banglaplus</a></li>
-      <li class="w-full mb-2 bg-gray-950 shadow-xl shadow-black p-2 flex justify-between items-center hover:border-b-2">
+      <li class="w-full mb-2 bg-gray-950 shadow-xl shadow-black p-2 flex justify-between items-center hover:border-b-2"><button type="button" class="logo w-10 h-10 rounded-full">logo</button>
       <a class="text-lg font-bold" title="joywin" data-src="https://api.247cs.live/google-sheets/${sheetId}/j1!A:Z/rows?connectionId=68414da0275727bf1c9c74fd" href="#j1">joywin</a></li>
-      <li class="w-full mb-2 bg-gray-950 shadow-xl shadow-black p-2 flex justify-between items-center hover:border-b-2">
+      <li class="w-full mb-2 bg-gray-950 shadow-xl shadow-black p-2 flex justify-between items-center hover:border-b-2"><button type="button" class="logo w-10 h-10 rounded-full">logo</button>
       <a class="text-lg font-bold" title="Takabaazi" data-src="https://api.247cs.live/google-sheets/${sheetId}/t1!A:Z/rows?connectionId=68414da0275727bf1c9c74fd" href="#takabaji">Takabaazi</a></li>
       </ul>
     </nav>

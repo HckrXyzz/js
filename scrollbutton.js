@@ -21,7 +21,7 @@ function createScrollButtons() {
   });
   const scrollContainer = document.createElement("div");
   scrollContainer.id = "scrollContainer";
-  scrollContainer.className ="fixed bottom-16 right-4 flex flex-col space-y-3 z-30";
+  scrollContainer.className ="fixed bottom-16 right-4 flex flex-col space-y-3 z-50";
   scrollContainer.appendChild(goTopBtn);
   scrollContainer.appendChild(goBottomBtn);
   document.body.appendChild(scrollContainer);

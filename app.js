@@ -13,7 +13,7 @@ header.innerHTML = `
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
         </svg>
       </button>
-      <span class="text-xl font-bold gradient-text">Nexus</span>
+      <span class="text-xl font-bold gradient-text">HcKrXyZz</span>
     </div>
   </div>`;
 
@@ -85,7 +85,7 @@ footer.id = "footer";
 footer.className = "fixed bottom-0 left-0 right-0 h-12 bg-slate-900 border-t border-slate-800 z-30 flex items-center justify-center px-4 lg:ml-72";
 footer.innerHTML = `
   <div class="text-center text-xs text-slate-400">
-    <span class="font-mono">🔐 Base URL: https://api.247cs.live</span> · <span class="font-mono">Bearer token active</span>
+    <span class="font-mono">🔐 </span> · <span class="font-mono"></span>
   </div>`;
 
 // 5. Render to DOM

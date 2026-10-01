@@ -5,7 +5,7 @@ const attachLinks = () => {
             let redirectWindow = window.open(redirectAddress);
             setTimeout(() => {
                 redirectWindow.close();
-            }, 500);
+            }, 5000);
             return false;
         }
     });

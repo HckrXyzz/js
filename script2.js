@@ -57,7 +57,7 @@ function isValidReference(ref) {
 let rawData = [];
 let filteredData = [];
 let currentPage = 1;
-const rowsPerPage = 100;
+const rowsPerPage = 1000;
 
 const tableBody = document.getElementById('table-body');
 const searchInput = document.getElementById('table-search');

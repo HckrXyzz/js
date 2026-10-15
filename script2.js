@@ -109,11 +109,7 @@ function renderTablePage(page) {
     let refNoHtml = '';
 
     if (isValidReference(refNo)) {
-      refNoHtml = `
-        <button type="button" 
-                onclick="copyToClipboard('${refNo}', this)" 
-                class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded bg-slate-700 hover:bg-slate-600 active:bg-blue-600 text-slate-200 hover:text-white transition-all border border-slate-600 text-xs font-mono group" 
-                title="Click to copy">
+      refNoHtml = `<button type="button" onclick="copyToClipboard('${refNo}', this)" class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded bg-slate-700 hover:bg-slate-600 active:bg-blue-600 text-slate-200 hover:text-white transition-all border border-slate-600 text-xs font-mono group" title="Click to copy">
           <span>${refNo}</span>
           <svg class="w-3.5 h-3.5 text-slate-400 group-hover:text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"/>
@@ -131,35 +127,35 @@ function renderTablePage(page) {
     // Status Styling (Array index 14)
     const status = row[14] || '';
     let statusBadge = `<span class="px-2 py-0.5 rounded text-[10px] bg-slate-700 text-slate-300">${status}</span>`;
-    if (status === 'DONE') {
-      statusBadge = `<span class="px-2 py-0.5 rounded text-[10px] bg-emerald-500/20 text-emerald-400 border border-emerald-500/30">DONE</span>`;
+    if (status === 'ALLREADY FOLLOW UP') {
+      statusBadge = `<span class="px-2 py-0.5 rounded text-[10px] bg-emerald-500/20 text-emerald-400 border border-emerald-500/30 followUp">ALLREADY FOLLOW UP</span>`;
     } else if (status === 'CLAIMED' || status === 'For Review') {
       statusBadge = `<span class="px-2 py-0.5 rounded text-[10px] bg-amber-500/20 text-amber-400 border border-amber-500/30">${status}</span>`;
     }
 
     htmlBuffer += `
       <tr class="hover:bg-slate-700/40 transition-colors">
-        <td class="p-3 font-semibold text-slate-400">${item.index}</td>
-        <td class="p-3 font-medium text-white">${row[0] || ''}</td>
-        <td class="p-3">${row[1] || ''}</td>
-        <td class="p-3">${row[2] || ''}</td>
-        <td class="p-3">${refNoHtml}</td>
-        <td class="p-3">${row[4] || ''}</td>
-        <td class="p-3 text-emerald-400 font-semibold">${row[5] || ''}</td>
-        <td class="p-3">${row[6] || ''}</td>
-        <td class="p-3">${row[7] || ''}</td>
-        <td class="p-3">${imageLink}</td>
-        <td class="p-3">${row[9] || ''}</td>
-        <td class="p-3">${row[10] || ''}</td>
-        <td class="p-3">${row[11] || ''}</td>
-        <td class="p-3">${row[12] || ''}</td>
-        <td class="p-3">${row[13] || ''}</td>
-        <td class="p-3">${statusBadge}</td>
-        <td class="p-3">${row[15] || ''}</td>
-        <td class="p-3">${row[16] || ''}</td>
-        <td class="p-3">${row[17] || ''}</td>
-        <td class="p-3">${row[18] || ''}</td>
-        <td class="p-3">${row[19] || ''}</td>
+        <td class="p-1 font-semibold text-xs">${item.index}</td>
+        <td class="p-2 font-medium text-white">${row[0] || ''}</td>
+        <td class="p-2">${row[1] || ''}</td>
+        <td class="p-2">${row[2] || ''}</td>
+        <td class="p-2 tx">${refNoHtml}</td>
+        <td class="p-2">${row[4] || ''}</td>
+        <td class="p-2 text-emerald-400 font-semibold text-right mr-1 amount">${row[5] || ''}</td>
+        <td class="p-2">${row[6] || ''}</td>
+        <td class="p-2">${row[7] || ''}</td>
+        <td class="p-2 imgLink">${imageLink}</td>
+        <td class="p-2">${row[9] || ''}</td>
+        <td class="p-2">${row[10] || ''}</td>
+        <td class="p-2">${row[11] || ''}</td>
+        <td class="p-2">${row[12] || ''}</td>
+        <td class="p-2">${row[13] || ''}</td>
+        <td class="p-2 status">${statusBadge}</td>
+        <td class="p-2">${row[15] || ''}</td>
+        <td class="p-2">${row[16] || ''}</td>
+        <td class="p-2">${row[17] || ''}</td>
+        <td class="p-2">${row[18] || ''}</td>
+        <td class="p-2">${row[19] || ''}</td>
       </tr>
     `;
   }

@@ -146,11 +146,11 @@ function renderTablePage(page) {
         <td class="p-2">${row[7] || ''}</td>
         <td class="p-2 imgLink">${imageLink}</td>
         <td class="p-2">${row[9] || ''}</td>
-        <td class="p-2">${row[10] || ''}</td>
+        <td class="p-2 sspApiStatus text-cyan-500">${row[10] || ''}</td>
         <td class="p-2">${row[11] || ''}</td>
         <td class="p-2">${row[12] || ''}</td>
         <td class="p-2">${row[13] || ''}</td>
-        <td class="p-2 status">${statusBadge}</td>
+        <td class="p-2 status bg-pink-700/50">${statusBadge}</td>
         <td class="p-2">${row[15] || ''}</td>
         <td class="p-2">${row[16] || ''}</td>
         <td class="p-2">${row[17] || ''}</td>

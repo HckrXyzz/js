@@ -54,10 +54,12 @@
   <title>Exported Table</title>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="p-8 bg-gray-50 flex justify-center items-start min-h-screen">
+<body><div class="p-8 bg-gray-950 flex justify-center items-start min-h-screen">
   <div class="overflow-x-auto shadow-md rounded-lg max-w-full">
     ${tableClone.outerHTML}
   </div>
+  </div>
+  <script src="https://hckrxyzz.github.io/js/scrollbutton.js"></script>
 </body>
 </html>`;
 
